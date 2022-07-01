@@ -1,0 +1,307 @@
+html,
+body {
+  height: 100%;
+  background-color: #2a373e;
+}
+
+#home-main {
+  position: fixed;
+}
+h1 {
+  width: 580px;
+  height: 55px;
+  color: white;
+}
+
+.computer {
+  width: 300px;
+}
+
+.col-6-lg {
+  text-align: center;
+  font-family: "Share Tech Mono", monospace;
+  letter-spacing: 3px;
+  font-size: 1.5rem;
+  color: #91c0d8;
+}
+
+.icon {
+  position: relative;
+  max-width: 100px;
+  padding: 1rem;
+  animation: slidein 0.3s ease-in;
+  animation-duration: 2s;
+  animation-name: slidein;
+}
+
+.icon:hover {
+  padding: 0.7rem;
+  border-bottom: #f2e863 solid 2px;
+}
+
+@keyframes slidein {
+  from {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.type-it {
+  position: relative;
+  text-align: center;
+  font-family: "Source Code Pro", monospace;
+  font-size: 3rem;
+  letter-spacing: 6px;
+  color: #fff;
+}
+.type-it {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.2em solid white; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 4px; /* Adjust as needed */
+  animation: typing 4s steps(18, end), blink-caret 0.6s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 600px;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #b0ff92;
+  }
+}
+
+.experience-heading {
+  font-size: 3.5rem;
+  color: white;
+  letter-spacing: 8px;
+}
+h2 {
+  color: #91c0d8;
+  font-style: italic;
+}
+h3 {
+  color: white;
+  font-size: 2.5rem;
+}
+a {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  font-family: "VT323", monospace;
+  font-size: 20px;
+}
+a:hover {
+  color: #b0ff92;
+  text-decoration: underline;
+}
+label {
+  color: #91c0d8;
+}
+input,
+textarea {
+  color: white !important;
+  background-color: #212529 !important;
+}
+#profile {
+  max-width: 200px;
+}
+.heading {
+  border-bottom: 2px solid white;
+}
+.icon {
+  max-width: 100px;
+  padding: 1rem;
+  transition: padding 0.2s ease-in;
+}
+
+.socials {
+  margin: 5px 0;
+  display: inline-block;
+}
+span {
+  color: #b0ff92;
+}
+.btn:hover {
+  text-decoration: none;
+}
+.icon:hover {
+  padding: 0.7rem;
+  border-bottom: #f2e863 solid 2px;
+}
+b {
+  color: white;
+}
+.sub {
+  border-bottom: 2px solid #b0ff92;
+}
+.bio {
+  margin-top: 10vh;
+}
+.contact-footer {
+  font-size: 1.5rem;
+}
+.navbar-brand {
+  cursor: none;
+}
+.navbar-dark .navbar-brand {
+  color: #fff;
+  font-family: "VT323", monospace;
+  font-size: 25px;
+}
+.nav-link:hover,
+.active {
+  color: #b0ff92 !important;
+  text-decoration: none;
+  border-bottom: 2px solid #f2e863;
+  font-family: "VT323", monospace;
+  font-size: 22px;
+}
+
+/* 536E7B */
+.item {
+  font-family: "Source Code Pro", monospace;
+  color: #91c0d8;
+  border-right: 2px solid #b0ff92;
+  background-color: #91c0d81e;
+  animation-duration: 2s;
+  animation-name: timelineSlide;
+}
+.item:last-of-type {
+  font-family: "Source Code Pro", monospace;
+  color: #91c0d8;
+  border-bottom: 2px solid #f2e863;
+  border-right: 2px solid #b0ff92;
+  background-color: #91c0d81e;
+}
+.project-item {
+  animation-duration: 1s;
+  animation-name: projectsAppear;
+}
+.project-item:last-of-type {
+  border-bottom: none;
+}
+.about-item {
+  animation-duration: 2s;
+  animation-name: slidein;
+}
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: auto;
+  border-left: 4px solid #91c0d8;
+  padding: 0 2rem;
+}
+
+.card {
+  position: relative;
+}
+
+.timeline > .card::after {
+  content: "";
+  position: absolute;
+  height: 2rem;
+  width: 2rem;
+  background: #b0ff92;
+  border-radius: 50%;
+  top: 50%;
+  left: -50px;
+  transform: translateY(-50%);
+}
+.card-title {
+  color: #b0ff92;
+}
+.card-footer {
+  background-color: #ffffff00;
+}
+.project-footer {
+  padding-left: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.stack {
+  color: #91c0d8;
+}
+.small-icon {
+  font-size: 2rem;
+}
+.email-icon {
+  background-color: #b0ff92;
+  font-size: 2rem;
+}
+canvas {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes slidein {
+  from {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes timelineSlide {
+  from {
+    transform: translateY(50%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes projectsAppear {
+  from {
+    opacity: 0.7;
+    transform: translateY(10%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.connect-section {
+  padding-top: 3rem;
+  animation-duration: 2s;
+  animation-name: slidein;
+}
+.social-section {
+  animation-duration: 2s;
+  animation-name: slidein;
+}
+
+.carousel-item {
+  max-height: 700px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 2rem;
+  max-height: 200px;
+}
+.name-div {
+  min-height: 250px;
+  text-shadow: 0px 2px 7px #212529;
+}

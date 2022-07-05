@@ -23,7 +23,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
       href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital@0;1&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
@@ -45,80 +57,77 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ms-auto">
-            <a class="nav-link active" href="index.html">Home</a>
-            <a class="nav-link" href="about.html">About</a>
-            <a class="nav-link" href="experiences.html">Experience</a>
-            <a class="nav-link" href="projects.html">Projects</a>
+            <a class="nav-link active" href="/">Home</a>
+            <a class="nav-link" href="/about.html">About</a>
+            <a class="nav-link" href="/experiences.html">Experience</a>
+            <a class="nav-link" href="/projects.html">Projects</a>
           </div>
         </div>
       </div>
     </nav>
-    <br />
-    <main class="container-fluid" id="home-main">
+    <main class="container-fluid" id="home-main"> 
       <canvas id="canvas" resize></canvas>
-      <section class="row justify-content-center align-items-center name-div">
-        <div class="col-lg-6 col-md-6 mt-5" id="typing">
-          <h1 class="type-it">Willian Goncalves</h1>
-          <br />
-          <h2 class="text-center" id="typeTitle">Web Developer</h2>
-        </div>
-      </section>
-      <section class="row justify-content-center align-items-center">
-        <img class="computer" src="images/pcpixel.webp" alt="" />
-        <p class="col-6-lg text-center text-white">Hello World! Let's CODE!</p>
-      </section>
-      <header
-        class="row connect-section justify-content-center align-items-center"
-      ></header>
-      <section
-        class="row social-section justify-content-center text-center mt-3"
-      >
-        <div class="col-lg-6">
-          <a
-            href="https://www.linkedin.com/in/williangon/"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><img
-              class="icon"
-              src="images/linkedin_pixel_logo_icon_181925.png"
-              class="socials"
-              alt="linkedin"
-          /></a>
-
-          <a
-            href="https://github.com/willgoncdev"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><img
-              class="icon"
-              src="images/github.png"
-              class="socials"
-              alt="GitHub"
-          /></a>
-          <a
-            href="mailto:willgonc.dev@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><img
-              class="icon"
-              src="images/email.png"
-              class="socials"
-              alt="email"
-          /></a>
-        </div>
+      <section>
+        <div class="title-container">
+            <h1 class="text-center mt-5" id="typing">Willian Goncalves</h1>
+            <br />
+            <h2 class="text-center" id="sub-title">Web Developer</h2>
+          </div>
+        </section>
+        <section class="row justify-content-center align-items-center">
+          <img class="computer" src="images/pcpixel.webp" alt="" />
+          <p class="col-6-lg text-center text-white">Hello World! Let's CODE!</p>
+        </section>
+        <header
+          class="row connect-section justify-content-center align-items-center"
+        ></header>
+        <section
+          class="row social-section justify-content-center text-center mt-3"
+        >
+          <div class="col-lg-6">
+            <a
+              href="https://www.linkedin.com/in/williangon/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img
+                class="icon"
+                src="images/linkedin_pixel_logo_icon_181925.png"
+                class="socials"
+                alt="linkedin"
+            /></a>
+  
+            <a
+              href="https://github.com/willgoncdev"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img
+                class="icon"
+                src="images/github.png"
+                class="socials"
+                alt="GitHub"
+            /></a>
+            <a
+              href="mailto:willgonc.dev@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img
+                class="icon"
+                src="images/email.png"
+                class="socials"
+                alt="email"
+            /></a>
+          </div>
+        </section>
+        
+              
       </section>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
     <script type="text/javascript" src="canvas.js"></script>
-    <script src="<https://unpkg.com/typeit@8.5.4/dist/index.umd.js>"></script>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        new TypeIt("#element", {
-          strings: ["willian "],
-        }).go();
-      });
-    </script>
-    <script src="jquery.js"></script>
-    <script src="typeit.js"></script>
   </body>
 </html>

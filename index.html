@@ -34,6 +34,9 @@
       href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital@0;1&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -63,16 +66,15 @@
     </nav>
     <main class="container-fluid" id="home-main"> 
       <canvas id="canvas" resize></canvas>
-      <section>
-        <div class="title-container">
-            <h1 class="text-center mt-5" id="typing">Willian Goncalves</h1>
-            <br />
-            <h2 class="text-center" id="sub-title">Web Developer</h2>
-          </div>
+      <section class="row justify-content-center align-items-center name-div">
+        <div class="col-lg-6 col-md-6 mt-5" id="typing">
+        <h1 class="text-center" id="typeName"></h1>
+        <h2 class="text-center" id="typeTitle"></h2>
+        </div>
         </section>
         <section class="row justify-content-center align-items-center">
           <img class="computer" src="images/pcpixel.webp" alt="" />
-          <p class="col-6-lg text-center text-white">Hello World! Let's CODE!</p>
+          <p class="col-6-lg text-center text-white" id="cooler-font">Hello World! Let's CODE!</p>
         </section>
         <header
           class="row connect-section justify-content-center align-items-center"
@@ -114,10 +116,27 @@
             /></a>
           </div>
         </section>
-        
-              
-      </section>
+        <script src="https://unpkg.com/typeit@8.2.0/dist/index.umd.js"></script>
+       </section>
     </main>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+      new TypeIt("#typeName", {
+          strings: "Willian Goncalves",
+          waitUntilVisible: true,
+          afterComplete: function () {
+              const cursor = document.getElementsByClassName("ti-cursor")[0].remove();
+          }
+      }).go();
+
+      setTimeout(() => {
+          new TypeIt('#typeTitle', {
+              strings: "Web Developer"
+          }).go();
+      }, 2000);
+
+  });
+</script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"

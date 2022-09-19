@@ -296,6 +296,11 @@ b {
   }
 }
 
+#btn-dark-2{
+  padding-left: 53px;
+  padding-right: 53px;
+}
+
 @media screen and (max-height: 760px) {
   .connect-section {
     display: none;

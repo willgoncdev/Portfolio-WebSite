@@ -67,6 +67,7 @@ textarea {
 }
 #profile {
   max-width: 200px;
+  border-radius: 15px;
 }
 .heading {
   border-bottom: 2px solid white;
@@ -132,7 +133,7 @@ b {
   animation-name: timelineSlide;
 }
 .item:last-of-type {
-  font-family: "VT323", monospace;
+  font-family: "IBM Plex Mono", monospace;
   color: #91c0d8;
   border-bottom: 2px solid #f2e863;
   border-right: 2px solid #b0ff92;

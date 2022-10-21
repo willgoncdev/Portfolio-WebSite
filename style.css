@@ -48,11 +48,13 @@ h3 {
   font-family: "VT323", monospace;
   font-size: 1.5rem;
   letter-spacing: 0.3rem;
+  padding-bottom: 2rem;
 }
 
 a {
   color: white;
   text-decoration: none;
+  
 }
 a:hover {
   color: #b0ff92;
@@ -104,9 +106,14 @@ b {
 .contact-footer {
   font-size: 1.5rem;
 }
+.navbar-brand{
+  font-size: 1.6rem;
+  padding-left: 1.2rem;
+}
+
 .navbar {
   font-family: "VT323", monospace;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 .nav-link {
   box-sizing: border-box;
@@ -117,6 +124,11 @@ b {
   padding-top: 0;
   padding-bottom: 0;
 }
+#space-nav{
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+}
+
 /* 536E7B */
 .nav-link:hover,
 .active {
@@ -124,6 +136,7 @@ b {
   text-decoration: none;
   border-bottom: 2px solid #f2e863;
 }
+
 .item {
   font-family: "IBM Plex Mono", monospace;
   color: #91c0d8;
@@ -250,6 +263,7 @@ b {
 }
 .computer {
   width: 300px;
+  padding: 20px;
 }
 
 @media screen and (max-width: 768px) {
@@ -271,7 +285,8 @@ b {
   }
   #typeName {
     font-family: "IBM Plex Mono", monospace;
-    font-size: 2rem;
+    font-size: 2.5rem;
+
   }
 
   /* Other pages */
